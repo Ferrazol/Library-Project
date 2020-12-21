@@ -58,6 +58,7 @@ function criarLivro(livroInfo) {
   pages.innerHTML = "Pages: " + livroInfo.pages;
 
   let read = document.createElement("p");
+  read.setAttribute("class", "read");
   if (livroInfo.read ===false){
     read.innerHTML = 'Not Read';
     read.style.backgroundColor = 'red';

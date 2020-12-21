@@ -2,27 +2,68 @@
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
-    width: 300px;
+    border-radius: 10px; /* 5px rounded corners */
+    width: 20%;
+    float: left;
     background-color: white;
+    padding: 0 10px;
+    margin-top:20px;
+    margin-left: 20px;
+    background-image: url('https://viverdeblog.com/wp-content/uploads/2017/04/como-escrever-um-livro-topo.png');
   }
-  
+  .mainh1{
+      
+    text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 80px;
+
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: 
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -10px 10px 40px dimgrey;
+  }
   /* On mouse-over, add a deeper shadow */
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
+  .read{
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
   /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
+    border-radius: 10px;
+
   }
-    body{
-      background-color: rgb(80, 124, 165);
+  body{
+      background-color: rgb(102, 241, 125);
   }
   h1{
       text-align: center;
       
   }
+h2{
+  text-align: center;
+}
+#inputtext{
+  text-align: center;
+}
+#checkBox{
+  text-align: center;
+}
 .novoLivro{
     background-color: rgb(253, 253, 253);
     width: 20%;
@@ -42,6 +83,7 @@
     padding: 10px;
     font-size: 20px;
     font-display: swap;
+    
 }
 .novoLivroModal:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -60,15 +102,18 @@
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
+    
   }
   .modal:target {
     opacity: 1;
     pointer-events: auto;
   }
   .modal > div {
-    width: 400px;
+    
+    width: 300px;
     position: relative;
     margin: 10% auto;
     padding: 15px 20px;
     background: #fff;
+    background-image: url('https://viverdeblog.com/wp-content/uploads/2017/04/como-escrever-um-livro-topo.png');
   }  

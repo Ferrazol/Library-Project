@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library Project</title>
     <link rel="stylesheet" href="book.css" />
-    <h1>Library Project</h1>
+    <h1 class = "mainh1">Library Project</h1>
   </head>
   <body>
-  </br></br>
-    <div class="fundo">
-        <div class = "fundoModal">
-      <a class="novoLivroModal" href="#abrirModal">New Book +</a>
-    </div>
-      <div id="abrirModal" class="modal">
-        <div class="card">
-          <div class="container">
-            <a href="#fechar" title="Fechar" class="fechar">x</a>
-            <form id = "form">
-            <h2>New Book</h2>
-            <div id = "inputtext">
+  <div id = "containerPagina">
+    <a class="novoLivroModal" href="#abrirModal">New Book +</a>
+    <div id="abrirModal" class="modal">
+      <div class="container">
+        <a href="#fechar" title="Fechar" class="fechar">x</a>
+        <form id="form">
+          <h2>New Book</h2>
+          <div id="inputtext">
             <label for="author">Author:</label>
-            <input type="text" id="author" name="author"><br><br>
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title"><br><br>
-            <label for="pages">Pages:</label>
-            <input type="text" id="pages" name="pages"><br><br>
-                </div>
-            <div id='checkBox'>
-                <p><label >Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
+            <div id="inputtext">
+              <input type="text" id="author" name="author" /><br /><br />
             </div>
-            <button class = 'novoLivro' type='submit' form='form' id='addNewBook'>Add</button>
-        </form>
+            <label for="title">Title:</label>
+            <div id="inputtext">
+              <input type="text" id="title" name="title" /><br /><br />
+            </div>
+            <label for="pages">Pages:</label>
+            <div id="inputtext">
+              <input type="text" id="pages" name="pages" /><br /><br />
+            </div>
           </div>
-        </div>
+          <div id="checkBox">
+            <p>
+              <label>Read: </label
+              ><input type="checkbox" id="read" name="read" value="yes" />
+            </p>
+          </div>
+          <button class="novoLivro" type="submit" form="form" id="addNewBook">
+            Add
+          </button>
+        </form>
+      </div>
     </div>
-    <div id = "livros"></div>
-      
-    </div>
+    <div id="livros"></div>
+  </div>
   </body>
 
   <script src="book.js"></script>
